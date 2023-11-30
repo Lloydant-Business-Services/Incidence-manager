@@ -1,0 +1,10 @@
+import React from 'react'
+import Table from '../component/table'
+
+export default function card() {
+  return (
+    <>
+    <Table />
+    </>
+  )
+}

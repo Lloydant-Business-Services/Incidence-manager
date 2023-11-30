@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { initFlowbite } from "flowbite";
 // import { Button } from 'flowbite-react';
-import { FaArrowUpFromBracket } from "react-icons/fa6";
+
 
 
 
@@ -56,7 +56,7 @@ const layout=({children})=> {
     >
       <div className="px-4 py-2">
         <div className=" items-center">
-          <ul className="flex items-center text-center justify-center text-sm text-gray-600 font-medium gap-1">
+          <ul className="flex items-center text-center justify-center text-sm text-gray-600 font-medium gap-3">
             <li className="block lg:inline">
               <a
                 href="#"
@@ -110,15 +110,11 @@ const layout=({children})=> {
     </nav>
   </header>
 
-  <div className="flex flex-col gap-2 px-4">
-                <label htmlFor="message" className='mt-5 text-sm font-bold text-gray-700'>Your Message</label>
-                <textarea className="h-60 shadow-md  p-8 border max-w-4xl border-slate-300" id="message" placeholder="Type your message here..."></textarea>
-            </div>
-            <div className='box-border m-0 p-0 flex flex-row'>
-              <input type='file' id='uploadBtn' className='hidden' />
-              <label htmlFor='uploadBtn' className='inline-block uppercase text-white text-center text-md bg-blue-500 shadow-md p-2 mt-4 ml-4'> <FaArrowUpFromBracket className='font-normal mr-2'/> Upload file</label>
-              
-            </div>
+
+       
+ 
+
+  
 
             
             
