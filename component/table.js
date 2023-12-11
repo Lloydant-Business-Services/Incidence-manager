@@ -1,9 +1,10 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { initFlowbite } from "flowbite";
 
 
-const table=({children})=> {
+const table=({children}) => {
+ 
 
   useEffect(() => {
     initFlowbite();
@@ -16,19 +17,19 @@ const table=({children})=> {
   <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
       <tr>
-        <th scope="col" className="px-6 py-3">
-          School name
+        <th scope="col" className="px-6 py-3" value={schoolName} onChange={(e) => setSchoolName(e.target.value)}>
+          SchoolName
         </th>
-        <th scope="col" className="px-6 py-3">
-          Issue Type
+        <th scope="col" className="px-6 py-3" value={issueType} onChange={(e) => setIssueType(e.target.value)}>
+          IssueType
         </th>
-        <th scope="col" className="px-6 py-3">
-          Time Uploaded
+        <th scope="col" className="px-6 py-3" value={timeUploaded} onChange={(e) => setTimeUploaded(e.target.value)}>
+          TimeUploaded
         </th>
-        <th scope="col" className="px-6 py-3">
+        {/* <th scope="col" className="px-6 py-3">
           Price
-        </th>
-        <th scope="col" className="px-6 py-3">
+        </th> */}
+        <th scope="col" className="px-6 py-3" value={issues} onChange={(e) => setIssues(e.target.value)}>
           Issues
         </th>
       </tr>
